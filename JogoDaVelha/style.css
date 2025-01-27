@@ -21,7 +21,7 @@ body{
      border-radius: 10px 10px 0 0;
      background-color: rgba(0, 0, 0, 0.26);
  }
- .Gameover{
+ .Final{
      display: flex;
      justify-content: space-evenly;
      align-items: center;
@@ -108,7 +108,7 @@ body{
          justify-content: start;
          padding-top: 125px;
      }
-     .Gameover{
+     .Final{
          display: flex;
          justify-content: space-evenly;
          align-items: center;
