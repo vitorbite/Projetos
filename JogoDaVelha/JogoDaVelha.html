@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da velha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="titulo"><h1>Jogo da Velha</h1><select>
+        <option value="bot">bot</option>
+        <option value="jogador">Jogador</option>
+    </select>
+    <button class="start" onclick="Start()">Começar</button>
+    </div>
+
+
+    <div class="Gameover" id="Gameover">
+        <h1>Fim de Jogo</h1>
+        <h3 class="restart">----</h2>
+            <button class="restart" id="restart">Recomeçar</button>
+            <audio src="assets/risos-e-aplausos.mp3"></audio>
+    </div>
+
+
+        <table>
+            <tr>
+                <td class="data" id="0"></td>
+                <td class="data" id="1"></td>
+                <td class="data" id="2"></td>
+            </tr>
+            <tr>
+                <td class="data" id="3"></td>
+                <td class="data" id="4"></td>
+                <td class="data" id="5"></td>
+            </tr>
+            <tr>
+                <td class="data" id="6"></td>
+                <td class="data" id="7"></td>
+                <td class="data" id="8"></td>
+            </tr>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
