@@ -1,0 +1,100 @@
+body {
+    background-color: aliceblue;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    margin-bottom: 20px;
+}
+.container {
+    height: 97vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    background-color: white;
+    max-width: 650px;
+    margin: auto;
+    border-radius: 20px;
+    border: 3px black solid;
+
+}
+
+
+div#emoji {
+    font-size: 50pt;
+    transform: rotateZ(90deg) rotateY(180deg);
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+button {
+    font-size: 10pt;
+    margin: 0 10px;
+    width: 90px;
+    height: 80px;
+    border-radius: 13px;
+}
+span {
+    display: inline-block;
+    transform: rotateZ(-90deg);
+    font-size: 30pt;
+}
+
+.box {
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.emoji {
+    font-size: 50pt;
+    animation: rotate 2s linear;
+    transform: rotateZ(90deg) rotateY(180deg);
+
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateZ(0deg) rotateY(180deg);
+    }
+
+    25% {
+        transform: rotateZ(100deg) rotateY(180deg);
+    }
+
+    50% {
+        transform: rotateZ(45deg) rotateY(180deg);
+    }
+
+    75% {
+        transform: rotateZ(-20deg) rotateY(180deg);
+    }
+
+    100% {
+        transform: rotateZ(90deg) rotateY(180deg);
+    }
+}
+
+#Confirm {
+    margin-top: 20px;
+    font-size: 12pt;
+    height: 50px;
+    width: 150px;
+    border: solid 2px black;
+    border-radius: 20px;
+    background-color: rgb(255, 215, 94);
+    box-shadow: -2px 2px 2px black;
+}
+#Confirm:active{
+    transform: translate(-2px, 2px);
+    box-shadow: 0px 0px 2px black;
+    border-color: rgb(143, 0, 0);
+    background-color: rgb(226, 195, 94);
+}
