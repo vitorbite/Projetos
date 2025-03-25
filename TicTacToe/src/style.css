@@ -32,6 +32,7 @@ div.titulo{
 div.select {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   flex-direction: column;
   position: absolute;
   top: 50%;
@@ -149,5 +150,9 @@ td.marked {
     width: 90px;
     height: 90px;
     font: 35pt arial;
+  }
+  div.select{
+    height: 460px;
+    top: 36%;
   }
 }
