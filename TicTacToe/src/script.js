@@ -1,6 +1,7 @@
 let cells = document.querySelectorAll('.data');
 const board = document.querySelector('table');
 let gameIsOn = true;
+const startButton = document.getElementById('start');
 let finalScreen = document.getElementById('Final');
 const audio = document.querySelector('audio');
 let frase = document.querySelector('h3')
@@ -10,7 +11,6 @@ let bot;
 
 
 restartButton.addEventListener('click', () => {
-    gameIsOn = true;
     finalScreen.style.display = 'none';
     board.classList.remove('board')
     Player1 = true;
@@ -22,10 +22,14 @@ function resetBoard() {
     cells.forEach(cell => {
         cell.classList.remove('marked');
         cell.innerHTML = '';
+        gameIsOn = false;
+        startButton.style.visibility = 'visible';
     });
 }
 
 function Start() {
+    gameIsOn = true;
+    startButton.style.visibility = 'hidden';
     let select = document.querySelector('select');
     bot = select.value == 'bot' ? true : false;
     Player1 = true;

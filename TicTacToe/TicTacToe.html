@@ -5,17 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/src/style.css">
 </head>
 
 <body>
-    <div class="titulo"><h1>Tic Tac Toe</h1><select>
-        <option value="bot">bot</option>
-        <option value="Player">Player</option>
-    </select>
-    <button class="start" onclick="Start()">Start</button>
-    </div>
-
+    <div class="titulo"><h1>Tic Tac Toe</h1></div>
+    <div class="select" id="start">
+        <h2>Select Your GameMode</h2>
+        <select>
+            <option value="bot">bot</option>
+            <option value="Player">Player</option>
+        </select>
+        <button class="start" onclick="Start()">Start</button>
+    </div>    
+    
 
     <div class="Final" id="Final">
         <h1>Game Over</h1>
@@ -43,7 +46,7 @@
             </tr>
     </div>
     
-    <script src="script.js"></script>
+    <script src="/src/script.js"></script>
 </body>
 
 </html>
