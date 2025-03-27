@@ -83,7 +83,7 @@ function checkWin() {
             setTimeout(() => {
                 finalScreen.style.display = 'flex'
                 audio.play();
-                frase.innerHTML = 'Player1 Wins!!!'
+                frase.innerHTML = 'Jogador1 Venceu!!!'
             }, 1000)
         };
     })
@@ -95,8 +95,8 @@ function checkWin() {
             setTimeout(() => {
                 finalScreen.style.display = 'flex'
                 audio.play();
-                if (bot) frase.innerHTML = 'Bot Wins!!'
-                if (!bot) frase.innerHTML = 'Player2 Wins!!!'
+                if (bot) frase.innerHTML = 'Bot Venceu!!'
+                if (!bot) frase.innerHTML = 'Jogador2 Venceu!!!'
             }, 1000)
         };
     })
@@ -105,7 +105,7 @@ function checkWin() {
         gameIsOn = false;
         setTimeout(() => {
             finalScreen.style.display = 'flex'
-            frase.innerHTML = 'Tie!!'
+            frase.innerHTML = 'Empate!!'
         }, 1000)
 
     }
