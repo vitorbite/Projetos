@@ -159,7 +159,7 @@ td.marked {
   div.selectMenu{
     justify-content: center;
   }
-  h2{
-    margin-bottom: 40px;
+  select{
+    margin: 40px 0;
   }
 }
