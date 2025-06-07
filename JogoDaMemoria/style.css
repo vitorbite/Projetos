@@ -44,6 +44,9 @@ body {
   .card{
     gap: 5px;
   }
+  .restart{
+    animation: end 0.7s ease-in-out;
+  }
 }
 .cards {
   position: absolute;
